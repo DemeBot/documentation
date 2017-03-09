@@ -1,0 +1,53 @@
+The Polar FarmBot will be able to plant and monitor the growth of plants without any human supervision. The bot will be able to plant seeds on a 16 feet by 16 feet plot. It will have various functions such as watering the plants, destroying the weeds and many more.
+
+\subsection{Able to plant seeds }
+\subsubsection{Description}
+The bot will be able to plant the seeds as the customer requires. It will be able to plant any seeds at any of plots within the range of the bot. Polar FarmBot consists of various nozzles, one of which is the seed injector. The seed injector works by using a strong vacuum pump to suction hold onto the tip. The seed injector is 3D printed in the lab and is supposed to be strong and durable. The seed injector will suck in seeds from the seed bin and will plant the seeds on the designated plots.
+\subsubsection{Source}
+The source of the requirements is the senior design team Demeter.
+\subsubsection{Constraints}
+The seed injector cannot identify what type of seeds to plant. The user has to put the right seeds in the right seed bin in order to get appropriate results. One might mix variety of seed types into one of the seed bin and have the bot plant whatever it happens to grab but the bot will have no idea of knowing what seed it is planting.
+\subsubsection{Standards}
+List of applicable standards
+\subsubsection{Priority}
+The priority of this requirement is critical as the whole idea of the Polar FarmBot depends on the bot being able to grow plants without any human help.
+
+\subsection{Able to water plants}
+\subsubsection{Description}
+The bot will be able to water the plants once the seeds are sowed. The bot consists of a watering nozzle which will water the plants at certain time of the day. The watering nozzle is 3D printed in the lab. It is connected to the garden hose in the central pole. Once the gantry is connected with the watering nozzle, the bot will start watering the seeds and will water all the seeds that are planted in the plot.
+\subsubsection{Source}
+The source of the requirements is the senior design team Demeter.
+\subsubsection{Constraints}
+If any of the plants require more or less water than other plants, the watering nozzle will not be able to detect that. The watering nozzle will water all the plants equally.
+\subsubsection{Priority}
+The priority of this requirement is critical as if the seeds are not watered well, there is a possibility that the plants might wither off.
+
+\subsection{Check the properties of the soil}
+\subsubsection{Description}
+The bot will be able to check the properties of the soil for better yield results. The bot consists of a soil sensor tool which is able to accurately read the properties of the soil. The soil sensor tool will give readings like the current amount of moisture on the soil and more. The base for the soil sensor tool is 3D printed in the lab and it will be attached to a soil sensor. The soil sensor works by driving the tool vertically into the soil so that the soil properties can be read accurately.
+\subsubsection{Source}
+The source of the requirements is the senior design team Demeter.
+\subsubsection{Constraints}
+The soil sensor tool has to be handled carefully and if the soil sensor cannot be driven directly into the ground, it will give inaccurate readings. One needs to be more careful while handling this equipment as if not handled carefully, the soil sensor circuit board might be damaged.
+\subsubsection{Priority}
+The priority of this requirement is high, but not critical. Having a soil sensor will help for faster growth of plants and better yields.
+
+\subsection{Kill weeds}
+\subsubsection{Description}
+The bot will be able to detect and kill weeds as required. Weeds in the plot will be destroyed by either pouring hot water in the weed or will be cut via blades. The blades tool will attach to the gantry and when it operates, it will be able to chop off all the weeds that is detected. The hot water nozzle will be able to kill the weeds by simply pouring hot water in the weeds. The arm will have a raspberry pi camera mounted to it which will detect any weeds that has grown in the plot.
+\subsubsection{Source}
+The source of the requirements is the senior design team Demeter.
+\subsubsection{Constraints}
+The blade tool has to be constantly maintained and checked for rust. If the weeds are too strong then the blade might not be able to chop off the weed as desired. While pouring the hot water into the weeds, we need to make sure that none of the hot water affects the plants and if miscalculated, the bot might hot water the plants instead of the weeds and kill the plants.
+\subsubsection{Priority}
+The priority of this requirement is high. If weeds are let to grow and not managed in time, it will deplete the quality of the soil and the field will look unmanaged.
+
+\subsection{Create Web application}
+\subsubsection{Description}
+The FarmBot will be controlled via web application. The web app allows you to easily configure and control your FarmBot from a web browser on your laptop, tablet, or smartphone. The application features real-time manual controls and logging, a sequence builder for creating custom routines for FarmBot to execute, and manage your farm. FarmBot's Raspberry Pi is used to maintain a connection and synchronize with the web application. Arduino firmware will be used for physically operating FarmBot's hardware, tools, sensors, and other electronics. It receives G and F codes from FarmBot Raspberry Pi Controller via the USB serial connection, and then moves the motors and reads and writes pins accordingly. It also sends collected data from the rotary encoders and pin reads back to the Raspberry Pi.
+\subsubsection{Source}
+The source of the requirements is the senior design team Demeter.
+\subsubsection{Constraints}
+The software needs to be maintained constantly and any problem in the software will halt all the functions of the hardware.
+\subsubsection{Priority}
+The priority of this requirement is critical. The software is one of the most important aspect of the whole project and failing to make a functioning software will cause the whole project to fail.
